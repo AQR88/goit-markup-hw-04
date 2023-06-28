@@ -37,7 +37,16 @@ body {
   column-gap: var(--indent-vertical);
 }
 .card-set-item {
-  width: calc(100% - (var(--items)-1 * var(--indent-vertical)) / var(--items));
+  width: calc(
+    (100% - (var(--items)-1) * var(--indent-vertical)) / var(--items)
+  );
+}
+.icon {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #f4f4fd;
 }
 
 /* Reset */
@@ -164,6 +173,14 @@ img {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-container {
@@ -238,6 +255,7 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  --items: 4;
 }
 
 .features-item {
@@ -280,7 +298,8 @@ img {
 .product-list {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: px;
+  --items: 3;
 }
 
 .product-item {
