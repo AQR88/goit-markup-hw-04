@@ -97,6 +97,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -138,9 +140,13 @@ img {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-item-id .active {
+  color: #404bbf;
 }
 
 .header-item-id.active::after {
@@ -151,8 +157,9 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #404bbf;
+  color: #404bbf;
   border-radius: 2px;
+  bottom: -1px;
 }
 
 .header-item-id:hover,
@@ -205,7 +212,8 @@ img {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-container {
@@ -398,6 +406,7 @@ img {
 }
 
 .soc-net {
+  padding: 32px 0;
 }
 .soc-list {
   display: flex;
