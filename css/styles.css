@@ -517,7 +517,7 @@ img {
 }
 .footer-soc-item {
   width: calc((100%-48px) / 4);
-
+  height: 40px;
   display: flex;
 
   justify-content: center;
